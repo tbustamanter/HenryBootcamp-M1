@@ -1,7 +1,7 @@
 "use strict";
 
 function BinarioADecimal(num) {
-  let array = num.split('').reverse();
+  let array = num.split('');
   let decimal = 0;
   for(let x=0; x <= array.length; x++){
     if(array[x] == 1){
@@ -9,7 +9,6 @@ function BinarioADecimal(num) {
     }
   }
   return decimal;
-
 }
 
 function DecimalABinario(num) {
@@ -24,6 +23,13 @@ function DecimalABinario(num) {
     num = Math.floor(num/2); 
   }
     return binario.reverse().join('');
+
+    //let binario = [];
+    //while (num >= 1){
+    //let res = Math.trunc(num%2);
+    //num= num/2;
+    //binario.unshift(res);
+    //}
 }
 
 
